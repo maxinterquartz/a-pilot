@@ -272,7 +272,32 @@
     border-radius:999px;
     font-size:14px;
   }
+  /* Кликабельный тег «Торг уместен» */
+  .tag-link{
+    display:inline-block;
+    margin-top:16px;
+    background:var(--yellow);
+    color:var(--navy);
+    font-weight:800;
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:14px;
+    text-decoration:none;
+    letter-spacing:.3px;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow:0 4px 14px rgba(255,195,0,.3);
+    cursor:pointer;
+  }
 
+  .tag-link:hover{
+    background:var(--yellow-dark);
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(255,195,0,.5);
+  }
+
+  .tag-link:active{
+    transform:translateY(0);
+  }
   /* ---------- FAQ ---------- */
   details{
     background:var(--navy-2);
@@ -488,7 +513,7 @@
         <small>Итоговая цена зависит от маршрута и времени</small>
       </div>
       <p>Мы не любим жёсткие прайсы. Скажите, сколько готовы заплатить — и мы найдём общий язык. Торг уместен всегда.</p>
-      <div class="tag">📉 Торг уместен</div>
+      <a class="tag tag-link" href="https://soberdriver.containerapps.ru/order">📉 Торг уместен</a>
     </div>
   </div>
 </section>
